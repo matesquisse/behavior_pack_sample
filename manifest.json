@@ -1,0 +1,37 @@
+{
+    "format_version": 2,
+    "header": {
+      "description": "Will you reach it!",
+      "name": "Find The Cake! (test 1)",
+      "uuid":"40b0fa42-5306-47fb-99a4-744a161792f9",
+      "version": [1, 0, 0],
+      "min_engine_version": [1, 20, 30]
+    },
+    "modules":
+      [
+        {
+          "description": "Cake is boolean.",
+            "type": "data",
+            "uuid": "40706111-9f79-4510-8035-10eb4a7af881",
+            "version": [1, 0, 0]
+        },
+        {
+          "description": "Test Scripting",
+            "type": "script",
+            "uuid": "7876a484-e198-46f7-97cc-13345451ba2b",
+            "version": [1, 0, 0],
+            "entry": "scripts/main.js"
+        }
+      ],
+    "dependencies": [
+      {
+        "module_name":"@minecraft/server",
+        "version":"1.5.0"
+      },
+      {
+        "module_name": "@minecraft/server-ui",
+        "version": "1.3.0"
+      }
+
+   ]
+  }

@@ -1,0 +1,45 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "custom:hands_attack",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:breathable": { //Optional, allows the entity to breath underwater
+				"breathes_water": true
+			},
+			"minecraft:scale": {
+          		"value": 2
+        	},
+			"minecraft:physics": { 
+				"has_gravity": false, //Optional, allows the entity to not be affected by gravity or water
+				"has_collision": false
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"pivot": [0, 100, 0],
+						"width": 0,
+						"height": 0
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:collision_box": {
+				"width": 0.0001,
+				"height": 0.0001
+			}
+		}
+	}
+}
