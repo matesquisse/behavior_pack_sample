@@ -17,7 +17,7 @@ import {
 import { ActionFormData } from "@minecraft/server-ui";
 import { MinecraftEffectTypes } from "vanilla-data.js";
 
-//testing sc
+//testing sc, most skibidi test of all time!
 
 let waveGoal = 0;
 let waveStart = false;
