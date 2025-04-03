@@ -607,7 +607,7 @@ function openDungeonMenu(){
         //player.sendMessage("Canceled due to " + response.cancelationReason);
         //player.sendMessage("Extra 60 seconds to loot!");
         //ISSUE IF USER IS BUSY...
-        timeForLooting = 1200;
+        openDungeonMenu();
       }
       if (response.selection == 0) {
         try {
@@ -648,9 +648,7 @@ function showExtractionOptions(player) {
       form.show(player).then((response) => {
         if (response.canceled) {
           //player.sendMessage("Canceled due to " + response.cancelationReason);
-          player.sendMessage("Extra 60 seconds to loot!");
-          //ISSUE IF USER IS BUSY...
-          timeForLooting = 1200;
+          showExtractionOptions();
         }
         if (response.selection == 0) {
           //kinda messy NGL but not the time to fix I think...
